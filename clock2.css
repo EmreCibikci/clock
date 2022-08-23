@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: rgb(56, 51, 51);
+overflow-y: hidden;
+}
+
+#clock{
+    position: relative;
+    width: 39rem;
+    height: 39rem;
+    border: 5px solid salmon;
+    border-radius: 50%;
+    background: url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) center;
+    background-repeat: no-repeat;
+    background-size: 88%;
+    background-color: rgb(247, 224, 194);
+}
+
+
+
+#second{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .1rem;
+    height: 12rem;
+    background-color: rgb(233, 173, 173);
+    /*tam ortalamamızı sağladı*/
+    transform: translateX(-50%) ;
+    transform-origin: 25% 0;
+}
+
+#minute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .2rem;
+    height: 9rem;
+    background-color: rgba(51, 10, 10, 0.685);
+    /*tam ortalamamızı sağladı*/
+    transform: translateX(-50%) ;
+    transform-origin: 25% 0;
+}
+
+#hour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .3rem;
+    height: 6rem;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    /*tam ortalamamızı sağladı*/
+    transform: translateX(-50%);
+    transform-origin: 25% 0;
+}
+
+#dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    /*tam ortalamamızı sağladı*/
+    transform: translateX(-50%);
+}
